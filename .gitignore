@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+.vscode/
+
+# Compiled output
+**/dist/
+**/tmp/
+**/out-tsc/
+**/lib/
