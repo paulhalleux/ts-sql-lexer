@@ -1,10 +1,10 @@
 {
-  "name": "@qwark/lexer",
+  "name": "lexer",
   "version": "0.0.0",
   "description": "SQL Lexer",
   "author": "Paul HALLEUX",
   "homepage": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "main": "lib/index.js",
   "files": [
     "src"

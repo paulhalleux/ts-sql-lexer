@@ -102,4 +102,9 @@ describe("testing tokenizer on select statement", () => {
     );
     expect(result).toHaveLength(13);
   });
+
+  test("can tokenize with boolean", () => {
+    const result = new Lexer().tokenize("SELECT * FROM table WHERE id = true");
+    expect(result).toHaveLength(8);
+  });
 });

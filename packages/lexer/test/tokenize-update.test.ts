@@ -19,4 +19,14 @@ describe("testing tokenizer on update statement", () => {
     );
     expect(result).toHaveLength(15);
   });
+
+  test("can tokenize with where and sub-query", () => {
+    const result = new Lexer().tokenize(
+      "UPDATE TOP (1000) TableName\n" +
+        "SET Value = 'abc1'\n" +
+        "WHERE Parameter1 = 'abc' AND Parameter2 = 123 AND Value <> 'abc1'"
+    );
+    console.log(result);
+    expect(result).toHaveLength(22);
+  });
 });

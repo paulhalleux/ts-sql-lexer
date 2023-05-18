@@ -134,4 +134,30 @@ export class BaseDialect {
   isSeparator(char: string) {
     return this.isWhitespace(char) || this.isNewLine(char);
   }
+
+  isInlineCommentStart(string: string) {
+    return string && string.length > 1 && Regex.InlineCommentStart.test(string);
+  }
+
+  isBlockCommentStart(string: string) {
+    return string && string.length > 1 && Regex.BlockCommentStart.test(string);
+  }
+
+  /**
+   * Checks if a character is a comment start character.
+   * @param string The characters to check.
+   */
+  isCommentStart(string: string) {
+    return (
+      this.isInlineCommentStart(string) || this.isBlockCommentStart(string)
+    );
+  }
+
+  /**
+   * Checks if a character is a comment end character.
+   * @param string The characters to check.
+   */
+  isCommentEnd(string: string) {
+    return string && string.length > 1 && Regex.BlockCommentEnd.test(string);
+  }
 }

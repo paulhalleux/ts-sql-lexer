@@ -1,5 +1,5 @@
 export const Regex = {
-  Whitespace: /\s/,
+  Whitespace: / /,
   Alpha: /[a-zA-Z]/,
   AlphaNumeric: /[a-zA-Z0-9]/,
   AlphaNumericOrUnderscore: /[a-zA-Z0-9_]/,
@@ -8,8 +8,7 @@ export const Regex = {
   NumericPart: /[0-9]/,
   Literal: /['"]/,
   NewLine: /\r\n|\r|\n/,
-  Comment: /\/\//,
-  CommentBlockStart: /\/\*/,
-  CommentBlockLine: /[^*]*\*+([^/*][^*]*\*+)*/,
-  CommentBlockEnd: /\*\//,
+  InlineCommentStart: /--/,
+  BlockCommentStart: /\/\*/,
+  BlockCommentEnd: /\*\//,
 };

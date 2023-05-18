@@ -9,13 +9,13 @@ import { SeparatorReader } from "./readers/separator-reader";
 import { OperatorReader } from "./readers/operator-reader";
 
 const readers = [
+  SeparatorReader, // Must be first
   NumericReader,
   IdentifierReader,
   OperatorReader,
   PunctuationReader,
   LiteralReader,
   LiteralReader,
-  SeparatorReader,
 ];
 
 export class Lexer {
@@ -72,7 +72,6 @@ export class Lexer {
     const list = [...this.tokens];
     this.tokens = [];
     this.currentPos = 0;
-    console.log(list);
     return list;
   }
 
