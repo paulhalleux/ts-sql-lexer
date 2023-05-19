@@ -26,7 +26,6 @@ describe("testing tokenizer on update statement", () => {
         "SET Value = 'abc1'\n" +
         "WHERE Parameter1 = 'abc' AND Parameter2 = 123 AND Value <> 'abc1'"
     );
-    console.log(result);
     expect(result).toHaveLength(22);
   });
 });

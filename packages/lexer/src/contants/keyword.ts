@@ -59,4 +59,5 @@ export const Keyword = [
   "unique",
   "check",
   "index",
+  "int",
 ] as const;

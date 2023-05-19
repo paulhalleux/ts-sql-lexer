@@ -66,7 +66,7 @@ export class BaseDialect {
    * @param char The character to check.
    */
   isIdentifierStart(char: string) {
-    return char && Regex.Alpha.test(char);
+    return (char && Regex.Alpha.test(char)) || char === "[";
   }
 
   /**

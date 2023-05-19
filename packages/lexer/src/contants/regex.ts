@@ -2,7 +2,7 @@ export const Regex = {
   Whitespace: / /,
   Alpha: /[a-zA-Z]/,
   AlphaNumeric: /[a-zA-Z0-9]/,
-  AlphaNumericOrUnderscore: /[a-zA-Z0-9_]/,
+  AlphaNumericOrUnderscore: /[a-zA-Z0-9_\[\]]/,
   NumericStart: /[-+]/,
   NumericPartChar: /[.eE]/,
   NumericPart: /[0-9]/,
