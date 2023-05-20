@@ -65,7 +65,7 @@ export class Lexer {
   }
 
   /**
-   * Reset lexer.
+   * Reset parser.
    * @returns {void}
    */
   reset() {
@@ -76,7 +76,7 @@ export class Lexer {
   }
 
   /**
-   * Move lexer position.
+   * Move parser position.
    * @param count - Number of characters to move
    */
   next(count = 1) {

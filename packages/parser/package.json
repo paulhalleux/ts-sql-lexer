@@ -1,17 +1,19 @@
 {
-  "name": "lexer",
+  "name": "parser",
   "version": "0.0.0",
-  "description": "SQL Lexer",
+  "description": "SQL Parser",
   "author": "Paul HALLEUX",
   "homepage": "",
   "license": "UNLICENSED",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "files": [
     "src"
   ],
   "scripts": {
     "build": "tsc"
+  },
+  "dependencies": {
+    "lexer": "^0.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.1",

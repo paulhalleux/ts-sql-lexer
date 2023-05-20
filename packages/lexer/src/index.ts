@@ -1,1 +1,1 @@
-export default "lexer";
+export { Lexer } from "./lexer/lexer";
